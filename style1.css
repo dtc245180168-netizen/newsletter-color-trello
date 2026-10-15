@@ -1,0 +1,97 @@
+﻿:root {
+    --primary-color: #0079BF;
+    --darker-primary-color: #005A8E;
+    --secondary-color: #026AA7;
+    --accent-color: #FF7A00;
+    --light-bg-color: #F4F5F7;
+    --card-bg-color: #FFFFFF;
+    --text-color: #172B4D;
+    --text-muted: #5E6C84;
+    --border-color: #DFE1E6;
+}
+
+body {
+    background-color: var(--light-bg-color);
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.newsletter-card {
+    background-color: var(--card-bg-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(9, 30, 66, 0.08);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.primary-bg {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    color: #FFFFFF !important;
+}
+
+.secondary-bg {
+    background-color: var(--secondary-color);
+    color: #FFFFFF !important;
+}
+
+.accent-bg {
+    background-color: var(--accent-color);
+    color: #FFFFFF !important;
+}
+
+.text-primary-color {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary-color {
+    color: var(--secondary-color) !important;
+}
+
+.text-accent-color {
+    color: var(--accent-color) !important;
+}
+
+.badge-accent {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    color: #FFFFFF !important;
+    border: none;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 121, 191, 0.3);
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--darker-primary-color);
+    box-shadow: 0 4px 12px rgba(0, 121, 191, 0.4);
+    transform: translateY(-1px);
+}
+
+.btn-accent-custom {
+    background-color: var(--accent-color);
+    color: #FFFFFF !important;
+    border: none;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(255, 122, 0, 0.35);
+}
+
+.btn-accent-custom:hover {
+    background-color: #E66E00;
+    transform: translateY(-1px);
+}
